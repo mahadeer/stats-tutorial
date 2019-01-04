@@ -1,0 +1,8 @@
+{
+    "name": "simpleHello",
+    "version": "0.1.1",
+    "main": "index.html",
+    "window": {
+        "frame": false
+    }
+}
