@@ -3,6 +3,14 @@
     "version": "0.1.1",
     "main": "index.html",
     "window": {
-        "frame": false
-    }
+        "frame": false,
+        "position": "center",
+        "resizable": false,
+        "height": 720,
+        "width": 1020
+    },
+    "webkit": {
+        "double_tap_to_zoom_enabled": false
+    },
+    "chromium-args": "--disable-pinch"
 }
