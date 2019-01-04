@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./Layouts/Header";
+import Content from "./Layouts/Content";
 
 class App extends React.Component {
     constructor(props) {
@@ -11,6 +12,7 @@ class App extends React.Component {
         return (
             <div class="app">
                 <Header />
+                <Content />
             </div>
         );
     }

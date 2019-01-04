@@ -1,0 +1,32 @@
+body {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.draggable {
+    -webkit-app-region: drag;
+}
+
+* {
+    -webkit-app-region: no-drag;
+}
+
+#app .right.menu {
+    top: 0px;
+    position: fixed;
+    right: 0px;
+}
+
+#app .right.menu a:hover {
+    color: red;
+}
+
+#app .right.menu .item {
+    width: 35px;
+}
+
+#app .right.menu .item:before {
+    content: none !important;
+}

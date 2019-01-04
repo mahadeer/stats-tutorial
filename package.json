@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nw app",
     "dev": "concurrently \"npm run build\" \"npm start\"",
-    "build": "webpack --watch --config ./webpack.config.js --mode production"
+    "build": "webpack --watch --config ./webpack.config.js --mode production --info-verbosity verbose"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
@@ -15,13 +15,13 @@
     "babel-loader": "^8.0.4",
     "babel-preset-es2015": "^6.24.1",
     "concurrently": "^4.1.0",
-    "rxjs": "^6.3.3",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "rxjs": "^6.3.3",
     "semantic-ui-react": "^0.84.0"
   },
   "keywords": [],
