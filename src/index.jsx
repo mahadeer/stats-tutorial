@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./Layouts/Header";
-import Content from "./Layouts/Content";
+import Header from "./Header";
+import Content from "./Content";
 
 class App extends React.Component {
     constructor(props) {
