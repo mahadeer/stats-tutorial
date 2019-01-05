@@ -1,0 +1,11 @@
+[package]
+name = "rust_stats"
+version = "0.1.0"
+authors = ["Mahadeer Mohamed <mahadeer2010@gmail.com>"]
+
+[lib]
+name="rust_stats"
+crate-type=["dylib"]
+
+[dependencies]
+sys-info = "0.5.6"

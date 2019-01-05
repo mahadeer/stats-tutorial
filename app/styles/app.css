@@ -30,3 +30,7 @@ body {
 #app .right.menu .item:before {
     content: none !important;
 }
+
+#app .segment.center {
+    text-align: center;
+}

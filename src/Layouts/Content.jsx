@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Segment } from 'semantic-ui-react'
+import { Grid, Segment, Statistic, Header } from 'semantic-ui-react';
 
 export default class extends React.Component {
     constructor(props) {
@@ -11,16 +11,26 @@ export default class extends React.Component {
             <Grid className="container" columns='equal'>
                 <Grid.Row>
                     <Grid.Column>
-                        <Segment>1</Segment>
+                        <Segment className="center">
+                            <Header as='h3' block>
+                                C++
+                            </Header>
+                            <Statistic size="large">
+                                <Statistic.Value>95.24%</Statistic.Value>
+                                <Statistic.Label>Memory used</Statistic.Label>
+                            </Statistic>
+                        </Segment>
                     </Grid.Column>
                     <Grid.Column>
-                        <Segment>2</Segment>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Segment>3</Segment>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Segment>4</Segment>
+                        <Segment className="center">
+                            <Header as='h3' block>
+                                Rust
+                            </Header>
+                            <Statistic size="large">
+                                <Statistic.Value>97.6%</Statistic.Value>
+                                <Statistic.Label>Memory used</Statistic.Label>
+                            </Statistic>
+                        </Segment>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

@@ -1,0 +1,30 @@
+{
+    "root": "./addons",
+    "lib": "./app/bin",
+    "addons": [
+        {
+            "name": "rust_stats",
+            "alias": "RustStats",
+            "buildCmd": "cargo build --release",
+            "afterBuildCmd": "mv ./target/release/lib${name}.${target} ./target/release/${alias}.${target}",
+            "dist": "./target/release",
+            "proxy": {
+                "GetRamUsage": [
+                    "double",
+                    []
+                ]
+            }
+        },
+        {
+            "name": "c_stats",
+            "alias": "CStats",
+            "buildCmd": "g++ -dynamiclib -o ${alias}.${target} main.cpp",
+            "proxy": {
+                "GetRamUsage": {
+                    "alias": "GetRamUsage",
+                    "signature": ["double", []]
+                }
+            }
+        }
+    ]
+}

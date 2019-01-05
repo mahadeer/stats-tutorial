@@ -35,6 +35,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+app/bin/
+addons/**/*.dylib
+addons/**/*.dll
+addons/**/*.so
+addons/**/target/
 
 # TypeScript v1 declaration files
 typings/

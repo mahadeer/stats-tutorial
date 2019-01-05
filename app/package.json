@@ -6,8 +6,8 @@
         "frame": false,
         "position": "center",
         "resizable": false,
-        "height": 720,
-        "width": 1020
+        "height": 275,
+        "width": 720
     },
     "webkit": {
         "double_tap_to_zoom_enabled": false
